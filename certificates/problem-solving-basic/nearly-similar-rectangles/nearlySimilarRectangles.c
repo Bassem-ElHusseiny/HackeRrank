@@ -12,6 +12,8 @@ long compare(const long *a, const long *b) // Compare Function To Sort 2D Array
 {
   return (*a - *b) ? (*a - *b) : (*(a + 1) - *(b + 1));
 };
+
+
 long nearlySimilarRectangles(int sides_rows, int sides_columns, long **sides)
 {
   long arr[sides_rows][2];
