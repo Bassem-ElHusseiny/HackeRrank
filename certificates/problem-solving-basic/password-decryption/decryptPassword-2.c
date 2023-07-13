@@ -26,7 +26,7 @@ char * decryptPassword(char *s)
     }
     else if (s[i] == '0')
     {
-      s[i - j] = numbers[(x--) - 1];
+      s[i - j] = numbers[--x];
     }
     else
     {
@@ -34,9 +34,9 @@ char * decryptPassword(char *s)
     }
   }
 
-  {
+  
     s[i - j] = '\0';
-  }
+  
 
   free(numbers);
   return s;
