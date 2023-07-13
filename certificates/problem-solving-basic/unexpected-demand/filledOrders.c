@@ -8,7 +8,7 @@ int filledOrders(int order_count, int* order, int k)
 {
 
   qsort(order, order_count, sizeof(int), compare);
-  int filled;
+  int filled = 0;
   for (int i = 0; i < order_count; i++)
   {
     if (order[i] <= k)
